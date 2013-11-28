@@ -38,6 +38,11 @@ hr {
   width: 60%;
 }
 
+.piece2 {
+  height: 373px;
+  padding-bottom: 10px;
+}
+
 .both {
   clear: both;
 }
@@ -69,6 +74,7 @@ hr {
 }
 
 #content {
+  min-height: 445px;
   width: 495px;
   margin-left: 2px;
   padding-left: 265px;
@@ -92,12 +98,7 @@ hr {
 
 audio {
   background-color: $brown;
-  width: 475px;
-}
-
-#horaire, #anniversaire {
-  float: left;
-  width: 240px;
+  width: 495px;
 }
 
 .plats_list_small {
