@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="<%= stylesheet_path 'application' %>" media="screen">
+    <script src="<%= javascript_path 'application' %>"></script>
+    <!--[if IE]>
+            <script type="text/javascript">
+                document.createElement("header");
+                document.createElement("footer");
+                document.createElement("nav");
+                document.createElement("article");
+                document.createElement("section");
+                document.createElement("audio");
+                document.createElement("video");
+            </script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <div id="header">
+          <h1>Abyssinia</h1>
+        </div>
+        <div id="naviguation">
+          <nav>
+            <ul>
+              <li><a href="/">Accueil</a></li>
+              <li><a href="/menu.html">Menu</a></li>
+              <li><a href="/traiteur.html">Traiteur</a></li>
+              <li><a href="/promotion.html">Promotion</a></li>
+              <li><a href="/bonnes_critiques.html">Bonnes critiques</a></li>
+              <li><a href="/informations.html">Informations</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="sub_nav">
+            <%= content_for(item, :sub_nav) %>
+          </div>
+        </div>
+        <div class="both"></div>
+      </header>
+      <div id="sidebar">
+        <%= content_for(item, :sidebar) %>
+      </div>
+      <div id="content">
+        <%= yield %>
+        <div class="both"></div>
+      </div>
+      <footer>
+        <%= content_for(item, :footer) %>
+        <p>développé par Liquid Concept</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+/***********************/
+/******* IMPORT ********/
+/***********************/
+@import "compass/reset";
+@import "compass/typography/text/replacement";  /*FEATURES FOR THE LOGO*/
+@import "compass/typography/lists/horizontal-list"; /* FEATURES FOR THE NAVBAR */
+@import "jquery-ui";
+
+$list-space: 5px;
+
+/*******************/
+/****** COLOR ******/
+/*******************/
+$beige: #f0e3b0;
+$brown: #6e3113;
+$black: #2a0f04;
+
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+a > img { text-decoration: none; border: none; }
+
+body {
+  color: $black;
+}
+
+a {
+  color: #891813;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+hr {
+  margin: 20px 0 20px 90px;
+  border-top: 1px solid $brown;
+  border-bottom: 0px solid transparent;
+  width: 60%;
+}
+
+.both {
+  clear: both;
+}
+
+.clear {
+  clear: left;
+}
+
+.important {
+  font-weight: bold;
+}
+
+.warning {
+  font-size: 0.9em;
+  background: $beige;
+  color: $brown;
+  font-weight: bold;
+}
+
+.image_right {
+  float: right;
+}
+
+#main {
+  height: 100%;
+  width: 980px;
+  margin: 0 auto;
+  background: url(background.jpg) 38px 0px repeat-y;
+}
+
+#content {
+  width: 495px;
+  margin-left: 2px;
+  padding-left: 265px;
+  margin-bottom: 20px;
+  background: url(panier.png) left bottom no-repeat;
+
+  table {
+
+    td, th {
+      border: #decd87 1px solid;
+    }
+
+    th {
+      text-align: center;
+      font-weight: bold;
+      width: 135px;
+      height: 25px;
+    }
+  }
+}
+
+audio {
+  background-color: $brown;
+  width: 475px;
+}
+
+#horaire, #anniversaire {
+  float: left;
+  width: 240px;
+}
+
+.plats_list_small {
+  float: left;
+  width: 187px;
+  clear: left;
+}
+
+.plats_list_height {
+  float: left;
+  width: 355px;
+  clear: left;
+  height: 130px;
+}
+
+#menu {
+
+  img {
+    padding-top: 5px;
+  }
+}
+
+.plats_list {
+  float: left;
+  width: 340px;
+  clear: left;
+}
+
+.plats_list_2 {
+  float: left;
+  width: 200px;
+}
+
+.big_plats_list {
+  float: left;
+  width: 500px;
+  clear: left;
+}
+
+#journaux {
+  float: left;
+  width: 298px;
+  padding-right: 26px;
+}
+
+.image_right #horaire {
+  margin-top: 50px;
+}
+
+.canape {
+  padding: 20px 0px 15px 0px;
+}
+
+.image_sidebar  {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.batimment_2 {
+  margin-left: 15%;
+}
+
+.batimment_3 {
+  margin-left: 25%;
+}
+
+.batimment_4 {
+  margin-left: 20%;
+}
+
+.map, .maryam, .kifto, .anniversaire {
+  margin-left: 8%;
+}
+
+.repas_2, .repas_3, .piece_2, .batimment_4 {
+  margin-top: 10px;
+}
+
+.plats_16 {
+  padding-right: 26px;
+}
+
+.center {
+  text-align: center;
+}
+
+h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $brown;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+form {
+
+  input, select, textarea, button {
+    background: #eed;
+  }
+
+  input {
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 365px;
+    height: 195px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+header {
+  width: 979px;
+  margin: 0 auto;
+  height: 265px;
+
+  h1 {
+    margin-left: -194px;
+    @include replace-text-with-dimensions('logo.png', 50%, 50%, true);
+  }
+
+  #header {
+    height: 155px;
+    margin-left: 202px;
+    background: url(header.jpg) no-repeat;
+  }
+
+  #naviguation {
+    background: url(menu.png) no-repeat;
+    height: 105px;
+
+    nav {
+      margin-left: 82px;
+      padding-top: 22px;
+
+      ul {
+      color: white;
+      @include horizontal-list($list-space);
+
+        li {
+          font-size: 0.9em;
+          font-weight: bold;
+
+          a, a:hover, a:visited {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    #sub_nav {
+      margin-left: 225px;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #982526;
+
+      p {
+        padding-right: 10px;
+        font-size: 12px;
+        font-family: helvetica;
+        display: inline;
+      }
+
+      a {
+        text-decoration: none;
+        color: #982526;
+      }
+    }
+  }
+}
+
+#cafe {
+
+  p {
+    text-align: center;
+    margin-right: 90px;
+  }
+}
+
+.cafe, .cafe_2, .cafe_3 {
+  margin: auto;
+}
+
+.cafe {
+  margin-left: 70px;
+}
+
+.cafe_2 {
+  width: 75%;
+}
+
+.cafe_3 {
+  width: 50%;
+}
+
+#sidebar {
+  float: right;
+  width: 171px;
+  margin-right: 15px;
+
+  p {
+    font-size: 0.9em;
+    padding-top: 5px;
+    margin: 0px;
+  }
+}
+
+footer {
+  width: 560px;
+  margin: 0 auto;
+  border-top: 2px solid $brown;
+  font-size: 10px;
+  text-align: center;
+
+  p {
+    margin: 2px 0px 0px 0px;
+  }
+}
