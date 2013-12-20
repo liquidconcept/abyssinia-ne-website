@@ -29,7 +29,7 @@ group :guard do
 end
 
 group :development do
-  gem 'capistrano'
+  gem 'capistrano', '~> 2.15.0'
   gem 'railsless-deploy'
 end
 
