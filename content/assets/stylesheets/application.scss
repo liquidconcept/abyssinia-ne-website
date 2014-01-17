@@ -70,7 +70,7 @@ hr {
   height: 100%;
   width: 980px;
   margin: 0 auto;
-  background: url(background.jpg) 38px 0px repeat-y;
+  background: inline-image('background.jpg') 38px 0px repeat-y;
 }
 
 #content {
@@ -79,7 +79,7 @@ hr {
   margin-left: 2px;
   padding-left: 265px;
   margin-bottom: 20px;
-  background: url(panier.png) left bottom no-repeat;
+  background: inline-image('panier.png') left bottom no-repeat;
 
   table {
 
@@ -229,11 +229,11 @@ header {
   #header {
     height: 155px;
     margin-left: 202px;
-    background: url(header.jpg) no-repeat;
+    background: inline-image('header.jpg') no-repeat;
   }
 
   #naviguation {
-    background: url(menu.png) no-repeat;
+    background: inline-image('menu.png') no-repeat;
     height: 105px;
 
     nav {
